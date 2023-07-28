@@ -9,13 +9,21 @@ const Header = () => {
     }
     return (
         <div className='header-container'>
+            <div className='overlay'>
             <div className='head'>
                 We're Lux design company
             </div>
             <button className='button' onClick={routeChange}>
                 contact us
             </button>
-        
+            <div className='body'>
+                if you can dream it, we can create it
+            </div>
+            <p className='par'>let your home be inique and stylish</p>
+            <div className='button-container'>
+            <button className='button2'>Projects</button>
+            </div>
+            </div>
         </div>
     )
 }

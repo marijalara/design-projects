@@ -36,7 +36,6 @@ const About = () => {
                     We hope to help you create the home of your dreams!
                 </p>
             </div>
-            
         </div>
         <div className='service-container'>
         <Card />

@@ -9,7 +9,7 @@ const Cards = () => {
         <CardMedia 
             className='media' 
             sx={{height: 80, width: 120}}
-            image=''
+            image='https://pluspng.com/img-png/mission-png-1121.png'
         />
         <CardContent>
             <Typography className='typo' color="text.secondary" gutterBottom>
@@ -27,7 +27,7 @@ const Cards = () => {
         <CardMedia 
             className='media' 
             sx={{height: 80, width: 120}}
-            image=''
+            image='https://tse1.mm.bing.net/th?id=OIP.OTicFsoACn1V0mVS39ZTNAHaFL&pid=Api&P=0&h=180'
         />
         <CardContent>
             <Typography className='typo' color="text.secondary" gutterBottom>
@@ -48,7 +48,7 @@ const Cards = () => {
         <CardMedia 
             className='media' 
             sx={{height: 80, width: 120}}
-            image=''
+            image='https://www.hemlingtonhallacademy.co.uk/wp-content/uploads/2018/10/history-clipart.jpg'
         />
         <CardContent>
             <Typography className='typo' color="text.secondary" gutterBottom>
@@ -57,14 +57,13 @@ const Cards = () => {
             <Typography variant="body2" className='body2'>
                 The human capacity to design has remained constant even though 
                 its means and methods have altered, in parallel to technological, 
-                organizational, and cultural changes. ‘The historical evolution 
-                of design’ argues that design, although a unique and unchanging skill, 
+                organizational, and cultural changes. The historical evolution 
+                of design argues that design, although a unique and unchanging skill, 
                 has manifested itself in different ways throughout time. The diversity 
                 of concepts and practices in modern design is explained by the layered 
                 nature of the evolution of design. It is difficult to determine exactly 
                 when humans began to change their environment to a significant degree, 
-                or in other words to design. Whose interest will design serve in the future? 
-                How will design cope with challenges of operating in a more globalized space?
+                or in other words to design.
             </Typography>
         </CardContent>
         </Card>
@@ -72,7 +71,7 @@ const Cards = () => {
         <CardMedia 
             className='media' 
             sx={{height: 80, width: 120}}
-            image=''
+            image='https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/4136465/2150/1620/m1/fpnw/wm0/work2-.jpg?1521104546&s=3556f2b78bc57bcd28c834fb1f48468d'
         />
         <CardContent>
             <Typography className='typo' color="text.secondary" gutterBottom>
