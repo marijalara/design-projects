@@ -7,6 +7,10 @@ const Header = () => {
         let path=`/contact`
         navigate(path)
     }
+    const routeChangeProjects=() => {
+        let path='/projects'
+        navigate(path)
+    }
     return (
         <div className='header-container'>
             <div className='overlay'>
@@ -21,7 +25,7 @@ const Header = () => {
             </div>
             <p className='par'>let your home be inique and stylish</p>
             <div className='button-container'>
-            <button className='button2'>Projects</button>
+            <button className='button2' onClick={routeChangeProjects}>Projects</button>
             </div>
             </div>
         </div>

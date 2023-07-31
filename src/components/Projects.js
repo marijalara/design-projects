@@ -49,7 +49,12 @@ const Projects = () => {
             <div className='img'>
                 {showImages.length > 0 ? (
                     showImages.map((image, index) => (
-                        <img key={index} src={image.url} alt={`Image ${index}`} />
+                        <img 
+                            key={index} 
+                            src={image.url} 
+                            alt='images' 
+                            className='custom-image'
+                        />
                     ))
                 ) : (
                     <p>No images</p>
