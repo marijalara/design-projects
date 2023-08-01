@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+Design-projects in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Goal
 
-## Available Scripts
+The goal is to created design-projects where we can expierence with some inforamtion.
 
-In the project directory, you can run:
+npm start
 
-### `npm start`
+I created react app with name design-projects and started my project with npm start.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I created new folder called components where I created a new file called App.js. In this file I created Routes with Routes for every different path, and I created files for every that path. In this file I imported Navbar so before that I created that file. In Navbar.js I created header and links for every pages. In App.js I also imported Header.js, I created that file where I had header and have button to navigate on page contact. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+So I in that file Content.js I created container and I created five inputs field for name, number, email, type and message.
 
-### `npm test`
+In Home.js I imported Header.js and Reviews.js. So, I created Reviews.js where I had states and used useEffect to created previous and next slider for the people that works where. For that I created data.js where I had id, name, title, image and quote. So in Reviews.js I used map statement to displayed this and here I used icon for left and right arrows.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I also created About.js where image and had paragraph with some information about that company. In this file I imported Cards.js in that file I created card with four different information with some images and different bodys.
 
-### `npm run build`
+I created Projects.js where I had buttons for the projects and some images.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I also created Footer.js where I had links for the facebook, instagram and twiter with icons for that.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+And I did some stay in index.css.

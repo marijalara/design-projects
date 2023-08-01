@@ -17,9 +17,9 @@ const Projects = () => {
     const showImages=clicked=== 'All' ? allImages : allImages.filter(image=> image.category ===clicked)
     return (
         <div className='projects-container'>
-            <header className='head4'>
-                our projects
-            </header>
+            <h2 className='head4'>
+                <span>/</span>our projects
+            </h2>
             <section className='buttons'>
                 <button 
                     className={clicked === 'All' ? 'active' : ''}

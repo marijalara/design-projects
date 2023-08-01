@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Header = () => {
     let navigate=useNavigate()
     const routeChange=() => {
-        let path=`/contact`
+        let path='/contact'
         navigate(path)
     }
     const routeChangeProjects=() => {

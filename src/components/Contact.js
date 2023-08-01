@@ -52,7 +52,7 @@ const Contact = () => {
     }
     return (
         <div className='contact-container'>
-            <article className='container'>
+            <div className='container'>
                 <h4>get in touch</h4>
                 {Object.keys(errors).length === 0 && isSubmit ? <div className='submit'>Success! Thank you!</div> : null}
                 <form className='form' onSubmit={onFormSubmit}>
@@ -98,8 +98,7 @@ const Contact = () => {
                     <p>{errors.message}</p>
                     <button className='button1'>submit here</button>
                 </form>
-            </article>
-        
+            </div>
         </div>
     )
 }
