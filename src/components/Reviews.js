@@ -26,7 +26,7 @@ const Reviews = () => {
     },[index])
   
     return (
-        <section className='section'>
+        <div className='section'>
         <div className='reviews'>
             <h2>
                 <span>/</span>Reviews
@@ -57,7 +57,7 @@ const Reviews = () => {
             <FiChevronRight />
         </button>
         </div>
-        </section>
+        </div>
     )
 }
 
