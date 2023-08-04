@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import { allImages } from '../images';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const [clicked, setClicked]=useState('All')
+    const [selectedProject, setSelectedProject] = useState(null);
 
     const handleClickButton=(category) => {
         setClicked(category)
+        setSelectedProject(null)
+    }
+    const handleImageClick=(project) => {
+        setSelectedProject(project)
     }
    
     const showImages=clicked=== 'All' ? allImages : allImages.filter(image=> image.category ===clicked)
@@ -43,7 +49,8 @@ const Projects = () => {
             <div className='img'>
                 {showImages.length > 0 ? (
                     showImages.map((image, index) => (
-                        <div className='image-container'>
+                        <Link to={`/projects/${image.project.name}`}>
+                        <div className='image-container' onClick={() => handleImageClick(image.project.name)}>
                         <img 
                             key={index} 
                             src={image.url} 
@@ -55,6 +62,7 @@ const Projects = () => {
                             <div className='text2'>{image.text}</div>
                         </div>
                         </div>
+                        </Link>
                     ))
                 ) : (
                     <p>No images</p>

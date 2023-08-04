@@ -775,3 +775,32 @@ p {
   transform: translate(-50%, -50%);
   text-align: center;
 } 
+.modern-design {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 4rem;
+}
+.modern-container {
+  position: relative;
+}
+.custom-modern {
+  width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .modern-kitchen {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 1500px;
+  }
+  .custom-modern {
+    width: 90%;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+  }
+}
