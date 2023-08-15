@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav>
             <header className='header'>
-                design 
+                Design 
             </header>
             <div>
                 <ul className={clicked ? 'navMenu active' : 'navMenu'}>

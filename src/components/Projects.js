@@ -12,6 +12,8 @@ const Projects = () => {
     }
     const handleImageClick=(project) => {
         setSelectedProject(project)
+
+        window.scrollTo({top: 0, behavior: 'smooth'})
     }
    
     const showImages=clicked=== 'All' ? allImages : allImages.filter(image=> image.category ===clicked)
@@ -48,11 +50,10 @@ const Projects = () => {
             </section>
             <div className='img'>
                 {showImages.length > 0 ? (
-                    showImages.map((image, index) => (
+                    showImages.map((image) => (
                         <Link to={`/projects/${image.project.name}`}>
-                        <div className='image-container' onClick={() => handleImageClick(image.project.name)}>
+                        <div className='image-container' key={image.id} onClick={() => handleImageClick(image.project.name)}>
                         <img 
-                            key={index} 
                             src={image.url} 
                             alt='images' 
                             className='custom-image'

@@ -26,6 +26,10 @@ export const allImages=[
                     id: 5,
                     url: 'http://www.idesignarch.com/wp-content/uploads/Open-Contemporary-Kitchen-Design_1.jpg',
                     description: 'Image 5 in modern kitchen'
+                },{
+                    id: 6,
+                    url: 'https://www.homestratosphere.com/wp-content/uploads/2018/09/modern-kitchen-design-photo2018-09-12-at-2.36.56-PM-8.jpg',
+                    description: 'Image 6 in modern kitchen'
                 }
             ]
         },
@@ -56,6 +60,10 @@ export const allImages=[
                     id: 5,
                     url: 'https://cdn.decoist.com/wp-content/uploads/2014/11/Gorgeous-tropical-outdoor-bathroom-with-spa-styled-brilliance.jpg',
                     description: 'Image 5 in outside bathroom'
+                },{
+                    id: 6,
+                    url: 'https://i.pinimg.com/originals/04/b7/6d/04b76d4d8bf3f73917dca00b94299223.jpg',
+                    description: 'Image 6 in outside bathroom'
                 }
             ]
         }
@@ -86,6 +94,10 @@ export const allImages=[
                     id: 5,
                     url: 'https://i.pinimg.com/originals/5b/3c/02/5b3c0250ef046d33b99f71597e2499c4.jpg',
                     description: 'Image 5 in comfy bedroom'
+                },{
+                    id: 6, 
+                    url: 'https://besthomish.com/wp-content/uploads/2019/11/comfy-master-bedroom-design-ideas12.jpg',
+                    description: 'Image 6 in comfy bedroom'
                 }
             ]
         }
@@ -116,6 +128,10 @@ export const allImages=[
                     id: 5,
                     url: 'https://empire-s3-production.bobvila.com/slides/19519/original/hoosier-cabinet.jpg?1591222783',
                     description: 'Image 5 in vintage kitchen'
+                },{
+                    id: 6, 
+                    url: 'https://resize.img.allw.mn/thumbs/00/j586fhz986rmso2x1bjymc_1080x1078.jpg?width=1200&height=1200',
+                    description: 'Image 6 in vintage kitchen'
                 }
             ]
         }
@@ -123,11 +139,69 @@ export const allImages=[
         url: 'https://i.pinimg.com/originals/93/64/ad/9364ad552f4876c07c0dde4b6586060e.jpg', 
         category: 'Bathroom', 
         text: 'Classic Bathroom',
-        project: 'classicBathroom'
+        project: {
+            name: 'classicBathroom',
+            images: [
+                {
+                    id: 1,
+                    url: 'https://gotohomerepair.com/wp-content/uploads/2017/01/Sophisticated-Master-Bathroom-With-Classic-Style-2017.jpg',
+                    description: 'Images 1 in classic bathroom'
+                },{
+                    id: 2,
+                    url: 'https://www.drurydesigns.com/wp-content/uploads/2018/11/square900-900-MattinglyMB.jpg',
+                    description: 'Images 2 in classic bathroom'
+                },{
+                    id: 3,
+                    url: 'https://inspirationdesignbooks.com/blog/wp-content/uploads/2018/08/modern-classicbatheroom-33.jpg',
+                    description: 'Image 3 in classic bathroom'
+                },{
+                    id: 4,
+                    url: 'https://inspirationdesignbooks.com/blog/wp-content/uploads/2018/08/modern-classic-bathroom-54.jpg',
+                    description: 'Image 4 in classic bathroom'
+                },{
+                    id: 5,
+                    url: 'https://i.pinimg.com/originals/c1/d1/37/c1d1376b5174783d244295d9e6c3d577.jpg',
+                    description: 'Image 5 in classic bathroom'
+                },{
+                    id: 6,
+                    url: 'https://empire-s3-production.bobvila.com/slides/21073/original/clawfoot-tub.jpg?1591224469',
+                    description: 'Image 6 in classic bathroom'
+                }
+            ]
+        }
     },{
         url: 'https://www.bigbathroomshop.co.uk/info/blog/wp-content/uploads/2014/06/vintage-bathroom-2.jpg', 
         category: 'Bathroom', 
         text: 'Retro Bathroom',
-        project: 'retroBathroom'
+        project: {
+            name: 'retroBathroom',
+            images: [
+                {
+                    id: 1,
+                    url: 'https://www.oldhouseonline.com/.image/c_limit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_700/MTU0NzY2NDM3MTkyMzExOTM1/1-toile-classic-bath-jj05-b_gn.jpg',
+                    description: 'Images 1 in retro bathroom'
+                },{
+                    id: 2,
+                    url: 'https://www.tileideaz.com/wp-content/uploads/2015/09/beautiful-minimalist-blue-tile-pattern-bathroom-decor-also-cute-bathtub.jpg',
+                    description: 'Images 2 in retro bathroom'
+                },{
+                    id: 3,
+                    url: 'https://www.stevewilliamskitchens.co.uk/wp-content/uploads/2016/05/amazing-set-of-vintage-style-bathroom-renovation-ideas-36.jpg',
+                    description: 'Image 3 in retro bathroom'
+                },{
+                    id: 4,
+                    url: 'http://house-interior.net/wp-content/uploads/2017/03/Vintage-bathroom-Vintage-decor-bathroom-ideas-modern-bathroom-decorating-trends-2017-interior-trends-2017-6.jpg',
+                    description: 'Image 4 in retro bathroom'
+                },{
+                    id: 5,
+                    url: 'https://i.pinimg.com/originals/58/25/28/58252865e6dbc259a89b3eac04305fc7.jpg',
+                    description: 'Image 5 in retro bathroom'
+                },{
+                    id: 6,
+                    url: 'http://www.maisonvalentina.net/en/news-events/wp-content/uploads/2015/06/10-Vintage-Bathroom-Design-Ideas5.jpg',
+                    description: 'Image 6 in retro bathroom'
+                }
+            ]
+        }
     }
 ]
