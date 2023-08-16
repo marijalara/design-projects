@@ -10,30 +10,27 @@ const Navbar = () => {
         setClicked(!clicked)
     }
     return (
-        <nav>
+        <nav className='navbar'>
             <header className='header'>
                 Design 
             </header>
-            <div>
-                <ul className={clicked ? 'navMenu active' : 'navMenu'}>
-                    <li>
-                        <Link to='/' className='navLink'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/about' className='navLink'>About Us</Link>
-                    </li>
-                    <li>
-                        <Link to='/projects' className='navLink'>Projects</Link>
-                    </li>
-                    <li>
-                        <Link to='/contact' className='navLink'>Contact Us</Link>
-                    </li>
-                </ul>
-            </div>
+            <ul className={clicked ? 'navMenu-active' : 'navMenu'} onClick={() => setClicked(false)}>
+                <Link to='/' className='navLink'>
+                    <li>Home</li>
+                </Link>
+                <Link to='/about' className='navLink'>
+                    <li>About Us</li>
+                </Link>
+                <Link to='/projects' className='navLink'>
+                    <li>Projects</li>
+                </Link>
+                <Link to='/contact' className='navLink'>
+                    <li>Contact Us</li>
+                </Link>
+            </ul>
             <div className='mobile' onClick={handleClick}>
-                <i>{clicked ? <AiOutlineClose /> : <GiHamburgerMenu />}</i>
+                {clicked ? <i><AiOutlineClose /></i> : <i><GiHamburgerMenu /></i>}
             </div>
-        
         </nav>
     )
 }

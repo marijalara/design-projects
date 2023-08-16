@@ -8,7 +8,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-nav {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,6 +21,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: right;
+}
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.mobile {
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -40,55 +51,48 @@ nav {
     color:  white;
   } 
 }
-.navMenu li {
+.navMenu .navLink li {
   list-style: none;
-  padding: 0 20px;
-}
-.navMenu li .navLink:hover {
+} 
+.navMenu .navLink li:hover {
   color: pink;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 }
-.mobile i{
-  color: #000;
-}
-.mobile {
-  display: none;
-}
 @media screen and (max-width: 759px) {
   .navMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    position: fixed;
-    top: 80px;
-    right: -760px;
-    width: 760px;
-    height: 60vh;
-    background-color: wheat;
-    box-shadow: 0 40px 60px rgba(133, 92, 92, 0.1);
-    padding: 40px 0 0 10px;
-    transition: transform 0.3s ease-in-out;
+    display: none;
+    z-index: 1000;
   }
-  .navMenu.active {
-    right: 0px;
+  .navMenu-active {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: hsl(21,65%,59%);;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    z-index: 1000;
   }
-  .navMenu li {
-    margin-bottom: 25px;
+  .navLink {
+    color: white;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
   }
   .mobile {
     display: block;
-    border-radius: 30%;
-    background-color: hsl(21,62%,45%);
-    padding: 10px;
-    width: 60px;
-    text-align: center;
-  }
-  .mobile i {
-    font-size: 24px;
-    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
     color: white;
+    background-color: hsl(21,62%,45%);
+    border-radius: 30%;
+    outline: none;
+    padding: 10px;
+    top: 15px;
+    right: 25px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -146,9 +150,12 @@ nav {
     text-transform: uppercase;
   }
 }
+.header-container {
+  background-image: url(https://gatsby-airtable-design-project.netlify.app/static/1f9f464a8fc63e93d102df52fd3ee874/c0672/mainBcg.webp);
+
+}
 @media screen and (min-width: 768px) {
   .header-container {
-    background-image: url(https://gatsby-airtable-design-project.netlify.app/static/1f9f464a8fc63e93d102df52fd3ee874/c0672/mainBcg.webp);
     height: 780px;
     background-repeat: no-repeat;
     background-size: 100%;
