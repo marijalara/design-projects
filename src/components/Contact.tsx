@@ -1,15 +1,31 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
-const Contact = () => {
-    const [text, setText]=useState({
+interface PropsContact {
+    name: string,
+    number: string,
+    email: string,
+    type: string,
+    message: string
+}
+
+interface PropsContactErrors {
+    name?: string,
+    number?: string,
+    email?: string,
+    type?: string,
+    message?: string
+}
+
+const Contact: React.FC = () => {
+    const [text, setText]=useState<PropsContact>({
         name: "",
         number: "",
         email: "",
         type: "",
         message: ""
     })
-    const [errors, setErrors]=useState({})
-    const [isSubmit, setIsSubmit]=useState(false)
+    const [errors, setErrors]=useState<PropsContactErrors>({})
+    const [isSubmit, setIsSubmit]=useState<boolean>(false)
 
     useEffect(() => {
         console.log(errors)
@@ -18,21 +34,21 @@ const Contact = () => {
         }
     },[errors])
 
-    const onFormSubmit=(e) => {
+    const onFormSubmit=(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setErrors(validate(text))
         setIsSubmit(true)
     }
 
-    const onInputChange=(e) => {
+    const onInputChange=(e: React.ChangeEvent<HTMLInputElement>) => {
         const {name, value}=e.target
         setText({
             ...text,[name]: value
         })
     }
 
-    const validate=() => {
-        const errors={}
+    const validate=(data: PropsContact): PropsContactErrors => {
+        const errors: PropsContactErrors={}
         if(!text.name) {
             errors.name="You must enter a name"
         }

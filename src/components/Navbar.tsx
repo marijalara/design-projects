@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {AiOutlineClose} from 'react-icons/ai';
 
-const Navbar = () => {
-    const [clicked, setClicked]=useState(false)
+const Navbar: React.FC = () => {
+    const [clicked, setClicked]=useState<boolean>(false)
     
     const handleClick=() => {
         setClicked(!clicked)

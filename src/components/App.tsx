@@ -8,17 +8,17 @@ import Contact from './Contact';
 import Footer from './Footer';
 import ComponentSelector from './ComponentSelector';
 
-const App = () => {
-    const routeParams = ['modernKitchen', 'outsideBathroom', 'comfyBedroom', 'vintageKitchen', 'classicBathroom', 'retroBathroom'];
+const App: React.FC= () => {
+    const routeParams: string[] = ['modernKitchen', 'outsideBathroom', 'comfyBedroom', 'vintageKitchen', 'classicBathroom', 'retroBathroom'];
     return (
         <Router>
             <Navbar />
             <Routes>
-                <Route path='/' exact element={<Home />} />
-                <Route path='/about' exact element={<About />} />
-                <Route path='/projects' exact element={<Projects />} />
-                <Route path='/contact' exact element={<Contact />} />
-                {routeParams.map((paramName) => (
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/contact' element={<Contact />} />
+                {routeParams.map((paramName: string) => (
                     <Route 
                         key={paramName}
                         path={`/projects/${paramName}`}

@@ -3,7 +3,7 @@ import Header from './Header';
 import Reviews from './Reviews'; 
 import Survey from './Survey';
 
-const Home = () => {
+const Home: React.FC = () => {
     return (
         <div>
             <Header />

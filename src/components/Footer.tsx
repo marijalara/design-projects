@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillFacebook, AiFillInstagram, AiFillTwitterSquare } from 'react-icons/ai'
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer>
             <div>

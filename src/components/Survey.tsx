@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import {FaVoteYea} from 'react-icons/fa';
 
-const Survey = () => {
-    const [votes, setVotes]=useState({
+interface PropsSurvey {
+    bathroom: number,
+    kitchen: number,
+    bedroom: number
+}
+
+const Survey: React.FC = () => {
+    const [votes, setVotes]=useState<PropsSurvey>({
         bathroom: 3656,
         kitchen: 3737,
         bedroom: 2073
     })
 
-    const handleVote=(room) => {
+    const handleVote=(room: keyof PropsSurvey) => {
         setVotes((prevVotes) => ({
             ...prevVotes,
             [room]: prevVotes[room] + 1

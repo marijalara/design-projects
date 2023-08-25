@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Header = () => {
+const Header: React.FC = () => {
     let navigate=useNavigate()
     const routeChange=() => {
         let path='/contact'

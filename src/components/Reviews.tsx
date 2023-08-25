@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {data} from '../data';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
 
-const Reviews = () => {
+const Reviews: React.FC = () => {
     const [people]=useState(data)
     const [index, setIndex]=useState(1)
 

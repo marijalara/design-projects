@@ -1,7 +1,11 @@
 import React from 'react';
 import { allImages } from '../images';
 
-const RetroBathroom = ({paramName}) => {
+interface PropsRetroBathroom {
+    paramName: string
+}
+
+const RetroBathroom: React.FC<PropsRetroBathroom> = ({paramName}) => {
     const projectRetroBathroom=allImages.filter((image) => image.project.name === paramName)
     return (
         <div className='design-project'>

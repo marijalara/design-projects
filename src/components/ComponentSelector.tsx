@@ -6,7 +6,11 @@ import VintageKitchen from './VintageKitchen';
 import RetroBathroom from './RetroBathroom';
 import OutsideBathroom from './OutsideBathroom';
 
-const ComponentSelector = ({paramName}) => {
+interface PropsComponentSelector {
+    paramName: string
+}
+
+const ComponentSelector:React.FC<PropsComponentSelector> = ({paramName}) => {
     switch (paramName) {
         case 'modernKitchen':
             return <ModernKitchen paramName={paramName}/>

@@ -2,21 +2,35 @@ import React, { useState } from 'react';
 import { allImages } from '../images';
 import { Link } from 'react-router-dom';
 
-const Projects = () => {
-    const [clicked, setClicked]=useState('All')
-    const [selectedProject, setSelectedProject] = useState(null);
+interface PropsImage {
+    url: string,
+    category: string,
+    text: string,
+    project: {
+        name: string,
+        images: {
+            id: number,
+            url: string,
+            description: string
+        }[]
+    }
+}
 
-    const handleClickButton=(category) => {
+const Projects: React.FC = () => {
+    const [clicked, setClicked]=useState<string>('All')
+    const [selectedProject, setSelectedProject] = useState<string | null>(null);
+
+    const handleClickButton=(category: string) => {
         setClicked(category)
         setSelectedProject(null)
     }
-    const handleImageClick=(project) => {
+    const handleImageClick=(project: string) => {
         setSelectedProject(project)
 
         window.scrollTo({top: 0, behavior: 'smooth'})
     }
    
-    const showImages=clicked=== 'All' ? allImages : allImages.filter(image=> image.category ===clicked)
+    const showImages: PropsImage[]=clicked=== 'All' ? allImages : allImages.filter(image=> image.category ===clicked)
     return (
         <div className='projects-container'>
             <h2 className='head4'>
@@ -52,7 +66,7 @@ const Projects = () => {
                 {showImages.length > 0 ? (
                     showImages.map((image) => (
                         <Link to={`/projects/${image.project.name}`}>
-                        <div className='image-container' key={image.id} onClick={() => handleImageClick(image.project.name)}>
+                        <div className='image-container' onClick={() => handleImageClick(image.project.name)}>
                         <img 
                             src={image.url} 
                             alt='images' 

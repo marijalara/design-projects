@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography} from '@mui/material';
 
-const Cards = () => {
+const Cards: React.FC = () => {
     const isMobile=window.innerWidth <=600
     return (
         <div className={`cards-container ${isMobile ? 'mobilee' : 'desktop'}`}>
